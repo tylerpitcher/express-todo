@@ -1,0 +1,34 @@
+{
+  "name": "express-todo",
+  "version": "1.0.0",
+  "description": "Todo list created with express.js.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylerpitcher/express-todo.git"
+  },
+  "keywords": [],
+  "author": "Tyler Pitcher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylerpitcher/express-todo/issues"
+  },
+  "homepage": "https://github.com/tylerpitcher/express-todo#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "dotenv": "^11.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "knex": "^0.95.15",
+    "passport": "^0.5.2",
+    "passport-google-oauth2": "^0.2.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/remove.js"></script>
+    <title>Todo</title>
+</head>
+<body>
+        <a href="/logout" id="logout" class="card">Logout</a>
+        <form method="post" class="card" autocomplete="off">
+            <label for="note">Note:</label>
+            <input type="text" name="note" id="note">
+            <input type="submit" value="Add">
+        </form>
+
+        <ul>
+            <% for (var note of locals.notes) {%>
+                <li class="card">
+                    <span class="data"><%= note.data %></span>
+                    <button type="button" class="remove-btn" value="<%= note.id %>">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </li>
+            <% } %>
+        </ul>
+</body>
+</html>
