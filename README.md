@@ -1,10 +1,6 @@
 # express-todo
 Todo list created with express.js.
 
-## Screenshot
-<img src="https://i.imgur.com/2uwGWbi.png" height="400">
-
-## Files
 ```
 ├── LICENSE
 ├── README.md
@@ -28,3 +24,6 @@ Todo list created with express.js.
 ├── passport.js            ======> Handles Google auth
 └── server.js              ======> Main server file
 ```
+
+## Screenshot
+<img src="https://i.imgur.com/2uwGWbi.png" height="400">
