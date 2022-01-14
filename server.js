@@ -75,9 +75,9 @@ app.post('/', isAuthenticated, async (req, res) => {
 /*
     Homepage sends post requests here to delete existing notes.
 */
-app.post('/remove', async (req, res) => {
+app.delete('/remove', async (req, res) => {
     await db.deleteNote(req.body.id);
-    res.redirect('/');
+    res.sendStatus(200);
 });
 
 app.listen(8081);
