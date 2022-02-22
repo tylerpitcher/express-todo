@@ -5,7 +5,6 @@ Todo list created with express.js.
 ├── LICENSE
 ├── README.md
 ├── node_modules
-├── package-lock.json
 ├── package.json
 ├── db
 │   ├── knex.js            ======> Connects SQL query builder with db.sqlite
