@@ -1,4 +1,4 @@
-# express-todo
+# Express Todo List
 Todo list created with express.js.
 
 ```
